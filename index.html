@@ -218,8 +218,7 @@
                         </div>
 
                     </a>
-                    <a class="projectItem a" target="_blank"
-                        href="https://qm.qq.com/cgi-bin/qm/qr?k=gvSE6sHAk0Z2dep75RYFNYuO3wJg_blI&jump_from=webapi&authKey=jcLAAHR81KM3qSNZlHH37sV5UfL1wZb1dMWz6eGr+mmpAz3bbNKK9qn9Y+R0vOMo">
+                    <a class="projectItem a" target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=gvSE6sHAk0Z2dep75RYFNYuO3wJg_blI&jump_from=webapi&authKey=jcLAAHR81KM3qSNZlHH37sV5UfL1wZb1dMWz6eGr+mmpAz3bbNKK9qn9Y+R0vOMo" onclick="checkPassword(event)">
                         <div class="projectItemLeft">
                             <h1>摸鱼之地</h1>
                             <p>属于模门的最后一块领土</p>
@@ -227,8 +226,21 @@
                         <div class="projectItemRight">
                             <img src="./static/img/i4.png" alt="">
                         </div>
-
-
+                    </a>
+                    
+                    <script>
+                        function checkPassword(event) {
+                            event.preventDefault(); // 阻止默认的链接跳转
+                            const password = prompt("请输入密码：");
+                            if (password === "摸门永存") {
+                                // 密码正确，跳转到链接
+                                window.open(event.currentTarget.href, "_blank");
+                            } else {
+                                alert("密码错误！");
+                            }
+                        }
+                    </script>
+                    
 
                     </a><a class="projectItem a" target="_blank" href="https://github.akams.cn">
                         <div class="projectItemLeft">
