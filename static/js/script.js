@@ -193,7 +193,7 @@ document.addEventListener('DOMContentLoaded', function () {
         };
 
         appendFps = function (fpsValue) {
-            fpsElement.textContent = 'FPS: ' + fpsValue;
+
         };
 
         step();
@@ -208,7 +208,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-var pageLoading = document.querySelector("#zyyo-loading");
+var pageLoading = document.querySelector("#kuel-loading");
 window.addEventListener('load', function() {
     setTimeout(function () {
         pageLoading.style.opacity = '0';
